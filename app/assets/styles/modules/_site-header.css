@@ -1,0 +1,42 @@
+.site-header {
+  height: 450px;
+  background-image: url("../../assets/images/hero--large.jpg");
+
+
+
+  &__logo {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 10px 0 0 45px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 100px;
+
+    & span {
+      display: inline-block;
+      padding: 0.2em 0.5em;
+      border: 10px solid #fff;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #fff;
+    line-height: 1;
+  }
+}
