@@ -447,19 +447,26 @@ img {
   height: 50px;
   width: 50px;
   float: left;
-  margin: 10px 0 0 45px;
+  margin: 7px 0 0 25px;
 }
 
 .site-header__title {
   text-align: center;
-  font-size: 72px;
+  font-size: 55px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   margin: 0 auto;
-  clear: both;
-  padding-top: 100px;
+  padding-top: 150px;
+}
+
+@media (min-width: 580px) {
+
+  .site-header__title {
+    font-size: 72px;
+    letter-spacing: 0.04em;
+  }
 }
 
 .site-header__title span {
@@ -472,21 +479,96 @@ img {
 .site-header__subtitle {
   text-align: center;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   color: #fff;
-  line-height: 1;
+  line-height: 0.8;
+}
+
+@media (min-width: 580px) {
+
+  .site-header__subtitle {
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+  }
+}
+
+.site-header__menu-icon {
+  width: 20px;
+  height: 19px;
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+}
+
+.site-header__menu-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  transform-origin: 0 0;
+  transition: transform .3s ease-out;
+}
+
+.site-header__menu-icon__middle {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  transition: all .3s ease-out;
+  transform-origin: 0 50%;
+}
+
+.site-header__menu-icon::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  transform-origin: 0 100%;
+  transition: transform .3s ease-out;
+}
+
+@media (min-width: 580px) {
+
+  .site-header__menu-icon {
+    display: none;
+  }
 }
 
 .primary-nav {
-  float: right;
-  margin: 25px 45px 0 0;
+  display: none;
+}
+
+@media (min-width: 580px) {
+
+  .primary-nav {
+    display: inline-block;
+    float: right;
+    margin: 25px 45px 0 0;
+    padding-top: 0;
+  }
 }
 
 .primary-nav ul {
   margin: 0;
   padding: 0;
+}
+
+.primary-nav ul::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .primary-nav li {
@@ -507,4 +589,15 @@ img {
 
 .primary-nav a:hover {
   color: rgba(255, 255, 255, 1);
+}
+
+.page-section {
+  padding: 60px 0;
+}
+
+@media (min-width: 580px) {
+
+  .page-section {
+    padding: 100px 0;
+  }
 }
