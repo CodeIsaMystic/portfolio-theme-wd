@@ -1,0 +1,28 @@
+.list-settings-basics {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  a {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .7);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .3s ease-out;
+
+    @mixin atSmall {
+      font-size: 13px;
+    }
+
+    &:hover {
+      color: rgba(255, 255, 255, .8);
+    }
+  }
+}
