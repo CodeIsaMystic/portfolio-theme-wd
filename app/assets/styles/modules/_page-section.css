@@ -1,0 +1,7 @@
+.page-section {
+  padding: 60px 0;
+
+  @mixin atSmall {
+    padding: 100px 0;
+  }
+}

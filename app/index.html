@@ -19,19 +19,35 @@
 
 <body>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--  Header  Section  -->
   <header class="site-header" data-matching-link="#hero-link">
-    <div class="wrapper">
-
+    <div class="site-header__top-bar">
       <div class="site-header__logo">
-        <img src="assets/images/icons/" class="site-header__logo__graphic icon"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 50 50">
+          <path fill="rgba(0, 0, 0, 0.4)"
+            d="M25 0c-13.807 0-25 11.193-25 25s11.193 25 25 25 25-11.193 25-25-11.193-25-25-25zm-6.435 43l4.599-15.033h-10.164l19.434-20.967-4.599 14.983h10.164l-19.434 21.017z" />
+        </svg>
+      </div>
 
       <div class="site-header__menu-icon">
         <div class="site-header__menu-icon__middle"></div>
       </div>
 
-      <div class="site-menu">
-        <nav class="primary-nav primary-nav--pull-right">
+      <div class="site-header__menu-content">
+        <nav class="primary-nav list-settings-basics">
           <ul>
             <li><a href="#about" id="about-link">About</a></li>
             <li><a href="#skills" id="skills-link">Skills</a></li>
@@ -42,38 +58,13 @@
         </nav>
       </div>
     </div>
+    <div class="hero">
+      <h1 class="hero__title"><span>JowD</span></h1>
+      <h2 class="hero__subtitle"> Développeur Frontend "Agile" </h2>
+    </div>
+
   </header>
   <!--   / Header Section  -->
-
-
-  <!--  Large Hero Section  -->
-  <div class="large-hero">
-
-    <!--  Large Hero Picture  -->
-    <picture>
-      <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w"
-        media="(min-width: 1380px)">
-      <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w"
-        media="(min-width: 990px)">
-      <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w"
-        media="(min-width: 640px)">
-      <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w"
-        alt="Coastal view of ocean and mountains" class="large-hero__image">
-    </picture>
-
-    <!--  Large Hero Content   -->
-    <div class="large-hero__text-content">
-
-      <div class="wrapper">
-        <h1 class="large-hero__title">Jow - Developpement</h1>
-        <h2 class="large-hero__subtitle">// Développement // Design // Gestion de projet "Agile" //</h2>
-      </div>
-
-    </div>
-  </div>
-  <!-- /  Large Hero Section  -->
-
-
 
   <!--   About Section  -->
   <div id="about" class="page-section" data-matching-link="#about-link">
@@ -205,20 +196,27 @@
 
   <!--   Footer  Section   -->
   <footer class="site-footer">
-    <div class="wrapper">
-      <div class="site-menu">
-        <img src="assets/images/icons/" class="site-header__logo__graphic icon site-header__logo__graphic icon__small"
-          alt="#">
-        <ul>
+    <div class="wrapper wrapper--clearfix">
+
+      <div class="site-footer__logo">
+        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 50 50">
+          <path fill="#fff"
+            d="M25 0c-13.807 0-25 11.193-25 25s11.193 25 25 25 25-11.193 25-25-11.193-25-25-25zm-6.435 43l4.599-15.033h-10.164l19.434-20.967-4.599 14.983h10.164l-19.434 21.017z" />
+        </svg>
+      </div>
+
+      <div class="site-footer__text">
+        <ul class="site-footer__text__link list-settings-basics">
           <li><a href="#about" id="about-link">About</a></li>
           <li><a href="#skills" id="skills-link">Skills</a></li>
           <li><a href="#work" id="works-link">Works</a></li>
           <li><a href="#services" id="services-link">Services</a></li>
           <li><a href="#contact" id="contact-link">Contact</a></li>
         </ul>
+
+        <p class="site-footer__text__copy">All content Copyright &copy; 2019.</p>
       </div>
 
-      <p><span class="site-footer__text">All content Copyright &copy; 2019.</span></p>
     </div>
   </footer>
   <!--  /  Footer Section  -->
