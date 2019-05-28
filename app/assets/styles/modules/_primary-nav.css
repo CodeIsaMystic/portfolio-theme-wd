@@ -1,14 +1,9 @@
 .primary-nav {
-  display: none;
+  display: inline-block;
+  float: right;
+  margin: 25px 65px 0 0;
+  padding-top: 0;
 
-
-  @mixin atSmall {
-    display: inline-block;
-    float: right;
-    margin: 25px 45px 0 0;
-    padding-top: 0;
-
-  }
 
   ul {
     margin: 0;
@@ -22,21 +17,31 @@
     display: inline-block;
   }
 
-  a {
-    margin-left: 20px;
-    padding: 0;
+  li:last-child {
+    padding-right: 20px;
 
+    @mixin atSmall {
+      padding-right: 0;
+    }
+  }
+
+  a {
+    padding: 0;
+    margin-left: 10px;
+    font-size: 12px;
     font-weight: 700;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, .6);
     text-transform: uppercase;
     text-decoration: none;
-    transition: color .7s ease-out;
+    transition: color .3s ease-out;
 
+    @mixin atSmall {
+      margin-left: 20px;
+      font-size: 13px;
+    }
 
     &:hover {
-      color: rgba(255, 255, 255, 1);
-
+      color: rgba(255, 255, 255, .8);
     }
   }
 }

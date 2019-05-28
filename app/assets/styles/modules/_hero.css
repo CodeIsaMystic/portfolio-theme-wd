@@ -1,0 +1,42 @@
+.hero {
+
+  &__title {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    padding-top: 150px;
+
+    @mixin atSmall {
+      font-size: 72px;
+      letter-spacing: 0.04em;
+
+    }
+
+    & span {
+      display: inline-block;
+      padding: 0.2em 0.5em;
+      border: 10px solid #fff;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: #fff;
+    line-height: 0.8;
+
+    @mixin atSmall {
+      font-size: 25px;
+      line-height: 1;
+      letter-spacing: 0.03em;
+    }
+  }
+}
