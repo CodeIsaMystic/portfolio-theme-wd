@@ -1,0 +1,16 @@
+.headline {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+
+  text-align: center;
+  color: $accentLight;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 13px;
+
+  @mixin atMedium {
+    font-size: 15px;
+  }
+}

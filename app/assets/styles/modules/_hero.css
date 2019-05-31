@@ -1,4 +1,9 @@
 .hero {
+  padding-top: 55px;
+
+  @mixin atMedium {
+    padding-top: 0;
+  }
 
   &__title {
     text-align: center;
@@ -10,7 +15,7 @@
     margin: 0 auto;
     padding-top: 150px;
 
-    @mixin atSmall {
+    @mixin atMedium {
       font-size: 72px;
       letter-spacing: 0.04em;
 
@@ -33,7 +38,7 @@
     color: #fff;
     line-height: 0.8;
 
-    @mixin atSmall {
+    @mixin atMedium {
       font-size: 25px;
       line-height: 1;
       letter-spacing: 0.03em;

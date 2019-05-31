@@ -1,0 +1,40 @@
+.align-items {
+  display: block;
+  text-align: center;
+
+  .item {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .item--profile {
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  @mixin atMedium {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__profile {
+      order: 3;
+    }
+
+    &__pencil {
+      order: 1;
+    }
+
+    &__mouse {
+      order: 2;
+    }
+
+    &__browser {
+      order: 4;
+    }
+
+    &__video {
+      order: 5;
+    }
+  }
+}

@@ -1,4 +1,6 @@
 .list-settings-basics {
+
+
   ul {
     margin: 0;
     padding: 0;
@@ -12,9 +14,9 @@
   a {
     font-size: 12px;
     font-weight: 700;
+    line-height: 1;
     color: rgba(0, 0, 0, .7);
     text-transform: uppercase;
-    text-decoration: none;
     transition: color .3s ease-out;
 
     @mixin atSmall {
