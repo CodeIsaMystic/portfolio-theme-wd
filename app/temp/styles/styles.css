@@ -915,6 +915,7 @@ a {
   height: 10px;
   position: relative;
   overflow: hidden;
+  perspective: 300px;
   background-position: center center no-repeat;
   background-size: cover;
 }
@@ -973,23 +974,28 @@ a {
   top: 0%;
   left: 0;
   right: 0;
+  transform: rotateX(0deg);
+  opacity: 1;
 }
 
 .thumb__overlay {
   position: absolute;
-  top: 100%;
+  top: -50%;
   left: 0;
   right: 0;
   height: 100%;
   background-color: #c99065e3;
   text-align: center;
-  transition: .2s;
+  transition: .75s;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  transform: rotateX(90deg);
+  transform-origin: (center bottom);
+  opacity: 0;
 }
 
 .thumb__overlay strong {
