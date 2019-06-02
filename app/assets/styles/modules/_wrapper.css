@@ -1,9 +1,0 @@
-.wrapper {
-  padding: 50px 30px;
-
-
-
-  &--clearfix {
-    @mixin clearfix;
-  }
-}

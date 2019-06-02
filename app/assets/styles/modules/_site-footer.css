@@ -1,6 +1,10 @@
 .site-footer {
+  /* position: relative;*/
+  padding: 50px 30px;
   background: url("../../assets/images/footer.jpg") center center;
   background-size: cover;
+
+  @mixin clearfix;
 
   &__logo {
     width: 50px;
@@ -21,12 +25,27 @@
     &__links {
       padding-left: 0;
       margin: 0;
+      list-style: none;
+
+      & li {
+        display: inline-block;
+
+      }
 
       & a {
-        padding-right: 8px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 1;
+        color: rgba(0, 0, 0, .7);
+        text-transform: uppercase;
+        transition: color .3s ease-out;
 
         @mixin atSmall {
-          padding-right: 20px;
+          font-size: 13px;
+        }
+
+        &:hover {
+          color: rgba(255, 255, 255, .8);
         }
       }
     }
@@ -40,6 +59,7 @@
       font-weight: 500;
       letter-spacing: 1;
       color: rgba(0, 0, 0, 0.8);
+
     }
 
   }

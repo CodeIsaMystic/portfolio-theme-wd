@@ -1,5 +1,5 @@
 .headline {
-  margin: 0 auto;
+  margin: 0 auto 40px;
   padding: 0;
   width: 100%;
 
@@ -8,9 +8,9 @@
   text-transform: uppercase;
   line-height: 1;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 16px;
 
   @mixin atMedium {
-    font-size: 15px;
+    font-size: 19px;
   }
 }

@@ -1,8 +1,9 @@
 .hero {
-  padding-top: 55px;
+  padding-top: 150px;
+  @mixin clearfix;
 
-  @mixin atMedium {
-    padding-top: 0;
+  @mixin atSmall {
+    padding-top: 130px;
   }
 
   &__title {
@@ -13,9 +14,9 @@
     text-transform: uppercase;
     letter-spacing: 0.02em;
     margin: 0 auto;
-    padding-top: 150px;
+   /* padding-top: 150px;*/
 
-    @mixin atMedium {
+    @mixin atSmall {
       font-size: 72px;
       letter-spacing: 0.04em;
 
@@ -25,7 +26,7 @@
       display: inline-block;
       padding: 0.2em 0.5em;
       border: 10px solid #fff;
-      margin-bottom: 20px;
+     /* margin-bottom: 10px;*/
     }
   }
 
@@ -38,7 +39,7 @@
     color: #fff;
     line-height: 0.8;
 
-    @mixin atMedium {
+    @mixin atSmall {
       font-size: 25px;
       line-height: 1;
       letter-spacing: 0.03em;

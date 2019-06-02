@@ -5,8 +5,8 @@
 
 @import "modules/_site-header";
 @import "modules/_primary-nav";
-@import "modules/_list-settings-basics";
 @import "modules/_hero";
+
 @import "modules/_page-section";
 @import "modules/_site-info";
 @import "modules/_headline";
@@ -14,5 +14,7 @@
 @import "modules/_generic-content";
 @import "modules/_skills-block";
 @import "modules/_site-work";
-@import "modules/_wrapper";
+@import "modules/_thumb";
+@import "modules/_projects-page";
+
 @import "modules/_site-footer";

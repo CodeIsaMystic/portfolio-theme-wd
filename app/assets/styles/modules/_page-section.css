@@ -1,5 +1,6 @@
 .page-section {
-  padding: 60px 0;
+  padding: 75px 0;
+  margin: 0 auto;
 
   @mixin atSmall {
     padding: 100px 0;
@@ -7,5 +8,9 @@
 
   &--gray {
     background-color: $bgColor;
+  }
+
+  &--no-p-t {
+    padding-top: 0;
   }
 }

@@ -1,17 +1,14 @@
 .info {
-
   &__icons {
     max-width: 780px;
     margin: 0 auto;
-    padding-top: 30px;
 
-
-
-    .item {
+    .item>svg {
       width: 100px;
       height: 100px;
       background-color: $bgColor;
       border-radius: 50%;
+      margin-top: 15px;
 
       &--profile {
         width: 200px;
@@ -23,7 +20,11 @@
   &__description {
     max-width: 620px;
     padding: 0 15px;
-    margin: 50px auto 0;
+    margin: 0 auto;
     text-align: center;
+
+    @mixin atSmall {
+      margin: 50px auto 0;
+    }
   }
 }

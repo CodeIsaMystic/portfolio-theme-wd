@@ -1,107 +1,36 @@
 .site-work {
-  &__container {
-    max-width: 960px;
+  overflow-x: hidden;
+
+  &__belt {
+    width: 200%;
+    position: relative;
+    left: 0%;
+    transition: all .8s ease-in;
+  }
+
+  .wrapper {
+    width: 50%;
+    float: left;
+  }
+
+  &__thumb-container {
+    max-width: 550px;
     margin: 0 auto;
     padding-top: 50px;
-  }
-}
 
-.thumb {
-  @mixin clearfix;
-
-  &__unit {
-    float: left;
-    display: block;
-    padding-top: 26%;
-    width: 100%;
-    height: 10px;
-    position: relative;
-    overflow: hidden;
-    perspective: 300px;
-    
-    background-position: center center no-repeat;
-    background-size: cover;
-    
-    @mixin atSmall {
-      padding-top: 16%;
-      width: 50%;
-      height: 140px;
-    }
     @mixin atMedium {
-      width: 25%;
-      height: 150px;
-    }
-
-    &--1 {
-      background-image: url('../../assets/images/work/proj-1/thumb.jpg')
-    }
-
-    &--2 {
-      background-image: url('../../assets/images/work/proj-2/thumb.jpg')
-    }
-
-    &--3 {
-      background-image: url('../../assets/images/work/proj-3/thumb.jpg')
-    }
-
-    &--4 {
-      background-image: url('../../assets/images/work/proj-4/thumb.jpg')
-    }
-
-    &--5 {
-      background-image: url('../../assets/images/work/proj-5/thumb.jpg')
-    }
-
-    &--6 {
-      background-image: url('../../assets/images/work/proj-6/thumb.jpg')
-    }
-
-    &--7 {
-      background-image: url('../../assets/images/work/proj-7/thumb.jpg')
-    }
-
-    &--8 {
-      background-image: url('../../assets/images/work/proj-8/thumb.jpg')
-    }
-
-
-
-
-    &:hover .thumb__overlay {
-      position: absolute;
-      top: 0%;
-      left: 0;
-      right: 0;
-      transform: rotateX(0deg);
-      opacity: 1;
+      max-width: 960px;
     }
   }
 
-  &__overlay {
-    position: absolute;
-    top: -50%;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background-color: #c99065e3;
-    text-align: center;
-    transition: .75s;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    transform: rotateX(90deg);
-    transform-origin: (center bottom);
-    opacity: 0;
+  &__projects-container {
+    /* need to control the img view on mobile device*/
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
 
-    strong {
-      display: block;
-      padding: 15px;
-
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 1.2;
+    @mixin atMedium {
+      max-width: 600px;
     }
   }
 }

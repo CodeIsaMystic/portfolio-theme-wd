@@ -1,21 +1,63 @@
 .primary-nav {
-  float: right;
-  margin: 25px 65px 0 0;
+  padding-top: 10px;
 
-  li:last-child {
-    padding-right: 20px;
+  @mixin atSmall {
+    padding-top: 0;
+  }
+  @mixin clearfix;
+
+
+  &--pull-right {
+    @mixin atSmall {
+      float: right;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    @mixin clearfix;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 8px;
 
     @mixin atSmall {
-      padding-right: 0;
+      padding-right: 20px;
+      float: left;
+      display: block;
+    }
+  }
+
+  li:last-child {
+    padding-right: 0;
+
+    @mixin atSmall {
+      padding-right: 20px;
     }
   }
 
   a {
-    padding: 0;
-    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    color: rgba(0, 0, 0, .7);
+    text-transform: uppercase;
+    transition: color .3s ease-out;
+
+    &:hover {
+      color: rgba(255, 255, 255, .8);
+    }
+
+    &.is-current-link {
+      color: #fff;
+    }
 
     @mixin atSmall {
-      margin-left: 30px;
+      font-size: 12px;
+
     }
   }
 }

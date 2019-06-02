@@ -46,14 +46,15 @@
 
 	'use strict';
 
-	__webpack_require__(3);
-
 	__webpack_require__(4);
+
+	__webpack_require__(5);
 
 /***/ }),
 /* 1 */,
 /* 2 */,
-/* 3 */
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*! picturefill - v3.0.2 - 2016-02-12
@@ -1603,7 +1604,7 @@
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 	(function(window, factory) {

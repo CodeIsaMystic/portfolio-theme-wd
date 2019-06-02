@@ -1,73 +1,68 @@
 .skills-block {
-  max-width: 350px;
-
+  width: 360px;
   margin: 0 auto;
   color: #999;
 
   @mixin clearfix;
 
   @mixin atSmall {
-    max-width: 750px;
+    width: 770px;
   }
 
   &__unit {
-    width: 100%;
-    padding-left: 60px;
-    /* text-align: center;*/
-    float: none;
-
+    width: 320px;
+    height: 30px;
+    margin-top: 10px;
+    float: left;
 
     @mixin atSmall {
-      width: 340px;
-      float: left;
-      text-align: none;
-
+      width: 350px;
     }
 
-    p {
+
+    &__p {
       margin: 0;
-      text-align: left;
+      padding-bottom: 3px;
     }
-  }
 
-  &__bar {
-    margin: 0 auto 30px;
-    font-size: 0;
+    &__bar {
+      margin: 0;
+      font-size: 0;
+      height: 6px;
+    }
 
     span {
+      width: 28px;
+      height: 4px;
 
       display: inline-block;
       margin: 0;
       padding: 0;
-      width: 28px;
-      height: 4px;
       background-color: $accent;
     }
 
-    &.skills-6 span:nth-child(n+7) {
+    .skills-6 span:nth-child(n+7) {
       background-color: $bgColor;
     }
 
-    &.skills-8 span:nth-child(n+9) {
+    .skills-7 span:nth-child(n+8) {
       background-color: $bgColor;
     }
 
-    &.skills-9 span:nth-child(n+10) {
+    .skills-8 span:nth-child(n+9) {
+      background-color: $bgColor;
+    }
+
+    .skills-9 span:nth-child(n+10) {
       background-color: $bgColor;
     }
   }
-}
 
-/**********************************
- Alignment column skills 
-*********************************/
-.align-margin-r {
-  margin-right: 60px;
-}
+  &--align-x {
+    padding-left: 40px;
 
-.no-margin-r-on-large {
-  @mixin atSmall {
-    margin-right: 0;
-
+    @mixin atSmall {
+      padding-left: 70px;
+    }
   }
 }
