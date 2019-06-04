@@ -15,6 +15,7 @@
     & svg {
       width: 100%;
       height: 100%;
+      opacity: 0.7;
     }
   }
 
@@ -36,16 +37,17 @@
         font-size: 12px;
         font-weight: 700;
         line-height: 1;
-        color: rgba(0, 0, 0, .7);
+        color: rgba(0, 0, 0, .6);
         text-transform: uppercase;
         transition: color .3s ease-out;
+        padding-left: 35px;
 
         @mixin atSmall {
           font-size: 13px;
         }
 
         &:hover {
-          color: rgba(255, 255, 255, .8);
+          color: #000;
         }
       }
     }

@@ -1,8 +1,12 @@
 @import "normalize.css";
+
+/****************    Base         ******************/
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
 
+
+/****************       Modules       ****************/
 @import "modules/_site-header";
 @import "modules/_primary-nav";
 @import "modules/_hero";
@@ -18,3 +22,13 @@
 @import "modules/_projects-page";
 
 @import "modules/_site-footer";
+
+/***************         Work           ****************/
+@import "work/_proj-1";
+@import "work/_proj-2";
+@import "work/_proj-3";
+@import "work/_proj-4";
+@import "work/_proj-5";
+@import "work/_proj-6";
+@import "work/_proj-7";
+@import "work/_proj-8";

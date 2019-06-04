@@ -2,30 +2,7 @@ import $ from 'jquery';
 
 
 
-
-
-function workBelt() {
-  $('.thumb__unit').click(function () {
-    $('.site-work__belt').css('left', '-100%');
-    $('.projects-page').show();
-  });
-
-  $('.projects-page__return').click(function () {
-    $('.site-work__belt').css('left', '0%');
-    $('.projects-page').hide();
-
-  });
-}
-
-
-export default workBelt();
-
-
-
-
-
-
-/*$(function Functions() {
+$(function Functions() {
   smoothScroll(300);
   workBelt();
 });
@@ -57,4 +34,4 @@ function workBelt() {
   });
 }
 
-export default Functions;*/
+export default Functions;
