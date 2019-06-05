@@ -381,9 +381,28 @@
 
 
   <!--  Form Section  -->
-  <div class="page-section">
+  <div class="site-form-contact page-section">
 
     <h3 class="headline">Get In Touch</h3>
+
+    <form class="form-contact" action="https://formspree.io/jowd@gmail.com" method="POST">
+
+      <div class="form-contact__info-group">
+        <label><span>Your name</span>
+          <input type="text" name="name"></label>
+
+        <label><span>Your email</span>
+          <input type="email" name="_replyto"></label>
+      </div>
+
+      <label><span>Tell me about your project</span>
+        <textarea name="message"></textarea></label>
+
+      <div class="submit">
+        <input class="submit__input" type="submit" value="Send">
+      </div>
+
+    </form>
 
   </div>
   <!-- / Form Section  -->
@@ -394,7 +413,7 @@
 
     <div class="site-footer__logo">
       <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 50 50">
-        <path fill="rgba(0, 0, 0, .75)"
+        <path fill="rgba(255, 255, 255, .4)"
           d="M25 0c-13.807 0-25 11.193-25 25s11.193 25 25 25 25-11.193 25-25-11.193-25-25-25zm-6.435 43l4.599-15.033h-10.164l19.434-20.967-4.599 14.983h10.164l-19.434 21.017z" />
       </svg>
     </div>

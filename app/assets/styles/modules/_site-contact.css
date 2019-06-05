@@ -1,11 +1,11 @@
 .site-contact {
   text-align: center;
-
+  
   &__social-links {
     display: flex;
     justify-content: space-around;
     max-width: 700px;
-    margin: 0 auto 50px;
+    margin: 50px auto;
 
     a {
       display: block;

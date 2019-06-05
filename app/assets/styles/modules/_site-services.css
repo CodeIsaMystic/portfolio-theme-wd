@@ -17,14 +17,14 @@
     &--next {
       position: absolute;
       top: 50%;
-      right: 10px;
+      right: 150px;
       cursor: pointer;
     }
 
     &--prev {
       position: absolute;
       top: 50%;
-      left: 10px;
+      left: 150px;
       cursor: pointer;
     }
   }
