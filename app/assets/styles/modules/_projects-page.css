@@ -1,5 +1,6 @@
 .projects-page {
   position: relative;
+  display: none;
 
   &__return {
     width: 40px;

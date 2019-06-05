@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "_spinner";
 
 /****************    Base         ******************/
 @import "base/_variables";
@@ -20,6 +21,8 @@
 @import "modules/_site-work";
 @import "modules/_thumb";
 @import "modules/_projects-page";
+@import "modules/_site-services";
+
 
 @import "modules/_site-footer";
 

@@ -9952,6 +9952,7 @@
 	(0, _jquery2.default)(function Functions() {
 	  smoothScroll(300);
 	  workBelt();
+	  workLoad();
 	});
 
 	function smoothScroll(duration) {
@@ -9969,14 +9970,33 @@
 	}
 
 	function workBelt() {
+
 	  (0, _jquery2.default)('.thumb__unit').click(function () {
+
 	    (0, _jquery2.default)('.site-work__belt').css('left', '-100%');
 	    (0, _jquery2.default)('.projects-page').show();
 	  });
 
 	  (0, _jquery2.default)('.projects-page__return').click(function () {
 	    (0, _jquery2.default)('.site-work__belt').css('left', '0%');
-	    (0, _jquery2.default)('.projects-page').hide();
+	    (0, _jquery2.default)('.projects-page').hide(500);
+	  });
+	}
+
+	function workLoad() {
+	  _jquery2.default.ajaxSetup({
+	    cache: false
+	  });
+
+	  (0, _jquery2.default)('.thumb__unit').click(function () {
+
+	    var $this = (0, _jquery2.default)(this),
+	        newTitle = $this.find('strong').text(),
+	        newFolder = $this.data('folder'),
+	        spinner = '<div class="loader">Loading...</div>',
+	        newHTML = '/work/' + newFolder + '.html';
+	    (0, _jquery2.default)('.project-load').html(spinner).load(newHTML);
+	    (0, _jquery2.default)('.project-title').text(newTitle);
 	  });
 	}
 

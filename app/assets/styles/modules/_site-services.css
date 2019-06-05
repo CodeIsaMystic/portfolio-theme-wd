@@ -1,0 +1,100 @@
+.site-services {
+  position: relative;
+
+  .services-slides-controls {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &>div {
+      width: 40px;
+      height: 40px;
+      margin-top: -20px;
+    }
+
+    &--next {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      cursor: pointer;
+    }
+
+    &--prev {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &__belt {
+    width: 100%;
+    position: relative;
+
+    &__unit {
+      max-width: 750px;
+      margin: 0 auto 50px;
+      display: flex;
+
+      .unit__icon {
+        text-align: center;
+        min-width: 150px;
+
+        &--title {
+          display: block;
+          font-size: 18px;
+          color: $accentLight;
+          margin-bottom: 0;
+          margin-top: 50px;
+        }
+
+        &--diamond {
+          width: 100px;
+          height: 100px;
+          /* padding-top: 100px;*/
+          margin-top: 50px;
+        }
+
+      }
+
+      .unit__content {
+        position: relative;
+        margin: 0 auto;
+        padding-left: 20px;
+        text-align: center;
+        z-index: 1;
+
+        .quote-mark {
+          position: absolute;
+          height: 60px;
+          width: 60px;
+          z-index: -1;
+          opacity: 0.3;
+
+          path {
+            fill: $accent;
+          }
+
+          &--left {
+            top: -7px;
+            left: 27px;
+          }
+
+          &--right {
+            transform: rotate(180deg);
+            bottom: -18px;
+            right: 27px;
+          }
+        }
+      }
+    }
+  }
+
+  &__logos {
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
+}
