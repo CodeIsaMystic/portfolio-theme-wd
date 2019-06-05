@@ -5,6 +5,7 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
+@import "base/_social-links";
 
 
 /****************       Modules       ****************/
@@ -22,6 +23,8 @@
 @import "modules/_thumb";
 @import "modules/_projects-page";
 @import "modules/_site-services";
+@import "modules/_site-contact";
+
 
 
 @import "modules/_site-footer";
