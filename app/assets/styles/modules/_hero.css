@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 150px;
+  padding-top: 80px;
   @mixin clearfix;
 
   @mixin atSmall {
@@ -14,23 +14,22 @@
     text-transform: uppercase;
     letter-spacing: 0.02em;
     margin: 0 auto;
-   /* padding-top: 150px;*/
 
     @mixin atSmall {
       font-size: 72px;
       letter-spacing: 0.04em;
-
     }
 
     & span {
       display: inline-block;
       padding: 0.2em 0.5em;
       border: 10px solid #fff;
-     /* margin-bottom: 10px;*/
+     
     }
   }
 
   &__subtitle {
+    padding-top: 14px;
     text-align: center;
     font-weight: 700;
     font-size: 18px;
@@ -40,6 +39,7 @@
     line-height: 0.8;
 
     @mixin atSmall {
+      padding-top: 0;
       font-size: 25px;
       line-height: 1;
       letter-spacing: 0.03em;

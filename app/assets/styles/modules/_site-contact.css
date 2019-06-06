@@ -1,23 +1,41 @@
 .site-contact {
   text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @mixin atSmall {
+    padding-left: 0;
+    padding-right: 0;
+  }
   
   &__social-links {
     display: flex;
     justify-content: space-around;
     max-width: 700px;
-    margin: 50px auto;
+    margin: 30px auto;
+
+    @mixin atSmall {
+      margin: 50px auto;
+    }
 
     a {
       display: block;
       text-align: center;
       background: $accent;
-      font-size: 28px;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
+      font-size: 18px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
       border-radius: 50%;
       color: #fff;
       transition: all .5s ease-in-out;
+
+      @mixin atSmall {
+        font-size: 28px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      }
 
       &:hover {
         transform: scale(1.2);
@@ -27,19 +45,30 @@
   }
 
   &__bar {
-    margin: 0 auto 50px;
-    width: 250px;
+    margin: 0 auto 30px;
+    width: 200px;
     height: 0px;
-    border-top: 4px solid $accent;
+    border-top: 2px solid $accent;
+
+    @mixin atSmall {
+      margin: 0 auto 50px;
+      width: 250px;   
+      border-top: 4px solid $accent;
+
+    }
   }
 
   &__mail-link {
     display: inline-block;
     text-align: center;
-    font-size: 72px;
+    font-size: 38px;
     font-weight: 100;
     color: $accent;
     transition: all .7s ease-in-out;
+
+    @mixin atSmall {
+      font-size: 72px;
+    }
     
     &:hover {
       color: #c99065e0;

@@ -4,8 +4,6 @@
   background: url("../../assets/images/hero.jpg") center center;
   background-size: cover;
 
-
-
   &__top-bar {
     padding: 0;
     padding-bottom: 7px;
@@ -16,17 +14,18 @@
   }
 
 
-  &--is-expanded {
-    background-color: transparent;
-  }
-
   &__logo {
+    position: absolute;
     height: 50px;
     width: 50px;
-    position: absolute;
     top: 0;
-    left: 25px;
-    margin: 7px 0 0 25px;
+    left: 50%;
+    margin: 7px 0 0 -25px;
+    
+    @mixin atSmall {      
+      left: 25px;
+      margin: 7px 0 0 25px;
+    }
 
     svg {
       width: 100%;
@@ -35,99 +34,17 @@
 
   }
 
-  &__menu-icon {
-    width: 20px;
-    height: 19px;
-    position: absolute;
-    cursor: pointer;
-    z-index: 10;
-    top: 20px;
-    right: 30px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: rgba(0, 0, 0, 0.55);
-      transform-origin: 0 0;
-      transition: transform .3s ease-out;
-    }
-
-    &__middle {
-      position: absolute;
-      top: 8px;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: rgba(0, 0, 0, 0.55);
-      transition: all .3s ease-out;
-      transform-origin: 0 50%;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 20px;
-      height: 3px;
-      background-color: rgba(0, 0, 0, 0.55);
-      transform-origin: 0 100%;
-      transition: transform .3s ease-out;
-    }
-
-    @mixin atSmall {
-      display: none;
-    }
-  }
-
-  &__menu-icon--close-x {
-    &::before {
-      transform: rotate(45deg) scaleX(1.25);
-      /*  background-color: rgba(0, 0, 0, 0.605);*/
-    }
-
-    .site-header__menu-icon__middle {
-      opacity: 0;
-      transform: scaleX(0);
-    }
-
-    &::after {
-      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-      /* background-color: rgba(0, 0, 0, 0.605);*/
-    }
-  }
-
   &__menu-content {
     position: relative;
     max-width: 100%;
     padding-top: 0;
     text-align: center;
-    z-index: -10;
-    opacity: 0;
-    /* transform: scale(1.3);*/
-    transition: all .3s ease-out;
 
     @mixin clearfix;
 
 
     @mixin atSmall {
       padding-top: 0;
-      z-index: 1;
-      opacity: 1;
-      transform: scale(1);
-
-    }
-
-    &--is-visible {
-      z-index: 1;
-      opacity: 1;
-      transform: scale(1);
-
     }
   }
-
 }

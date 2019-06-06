@@ -1,9 +1,10 @@
 .primary-nav {
-  padding-top: 10px;
+  padding-top: 80px;
 
   @mixin atSmall {
-    padding-top: 0;
+    padding-top: 20px;
   }
+
   @mixin clearfix;
 
 

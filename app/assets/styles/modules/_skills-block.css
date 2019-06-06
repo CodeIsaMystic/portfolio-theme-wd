@@ -10,7 +10,7 @@
   }
 
   &__unit {
-    width: 320px;
+    width: 250px;
     height: 30px;
     margin-top: 10px;
     float: left;
@@ -32,13 +32,18 @@
     }
 
     span {
-      width: 28px;
+      width: 18px;
       height: 4px;
 
       display: inline-block;
       margin: 0;
       padding: 0;
       background-color: $accent;
+
+      @mixin atSmall {
+        width: 28px;
+
+      }
     }
 
     .skills-6 span:nth-child(n+7) {
@@ -59,8 +64,8 @@
   }
 
   &--align-x {
-    padding-left: 40px;
-
+    padding-left: 70px;
+/* to adjust centering */
     @mixin atSmall {
       padding-left: 70px;
     }
