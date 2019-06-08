@@ -269,14 +269,15 @@ body {
   text-decoration: none;
 }@font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?1ry6t3');
-  src:  url('fonts/icomoon.eot?1ry6t3#iefix') format('embedded-opentype'),
+  src: url('fonts/icomoon.eot?1ry6t3');
+  src: url('fonts/icomoon.eot?1ry6t3#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?1ry6t3') format('truetype'),
     url('fonts/icomoon.woff?1ry6t3') format('woff'),
     url('fonts/icomoon.svg?1ry6t3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
-}[class^="icon-"], [class*=" icon-"] {
+}[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -290,7 +291,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }.icon-twitter:before {
-  content: "\f099";
+  content: "\f099" !important;
 }.icon-github:before {
   content: "\f09b";
 }.icon-linkedin:before {
@@ -803,26 +804,26 @@ body {
   margin: 30px auto;
 }@media (min-width: 768px){.site-contact__social-links{
     margin: 50px auto;
+  }.site-contact__social-links a{
+    display: block;
+    text-align: center;
+    background: #c99065;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all .5s ease-in-out;
+  }@media (min-width: 768px){.site-contact__social-links a{
+      font-size: 28px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+    }
+  }.site-contact__social-links a:hover{
+    transform: scale(1.2);
   }
-}.site-contact__social-links a {
-  display: block;
-  text-align: center;
-  background: #c99065;
-  font-size: 18px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 50%;
-  color: #fff;
-  transition: all .5s ease-in-out;
-}@media (min-width: 768px){.site-contact__social-links a{
-    font-size: 28px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-  }
-}.site-contact__social-links a:hover {
-  transform: scale(1.2);
 }.site-contact__bar {
   margin: 0 auto 30px;
   width: 200px;
@@ -948,4 +949,4 @@ body {
   font-weight: 500;
   letter-spacing: 1;
   color: rgba(0, 0, 0, 0.8);
-}/***************         Work           ****************/
+}

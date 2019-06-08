@@ -7,7 +7,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  
+
   &__social-links {
     display: flex;
     justify-content: space-around;
@@ -16,29 +16,30 @@
 
     @mixin atSmall {
       margin: 50px auto;
-    }
 
-    a {
-      display: block;
-      text-align: center;
-      background: $accent;
-      font-size: 18px;
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-      border-radius: 50%;
-      color: #fff;
-      transition: all .5s ease-in-out;
 
-      @mixin atSmall {
-        font-size: 28px;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      }
+      a {
+        display: block;
+        text-align: center;
+        background: $accent;
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        color: #fff;
+        transition: all .5s ease-in-out;
 
-      &:hover {
-        transform: scale(1.2);
+        @mixin atSmall {
+          font-size: 28px;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+        }
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
 
@@ -52,7 +53,7 @@
 
     @mixin atSmall {
       margin: 0 auto 50px;
-      width: 250px;   
+      width: 250px;
       border-top: 4px solid $accent;
 
     }
@@ -69,7 +70,7 @@
     @mixin atSmall {
       font-size: 72px;
     }
-    
+
     &:hover {
       color: #c99065e0;
       transform: scale(1.3);
