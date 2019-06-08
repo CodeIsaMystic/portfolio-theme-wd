@@ -3,6 +3,8 @@
     max-width: 450px;
     margin: 50px auto 0;
 
+    @mixin clearfix;
+
     input,
     textarea {
       border: 3px solid $accent;
@@ -24,7 +26,7 @@
 
     .submit {
       text-align: right;
-     margin: 0;
+      margin: 0;
 
       &__input {
         background-color: $accent;
@@ -32,7 +34,7 @@
         font-size: 18px;
         text-transform: uppercase;
         width: 33%;
-        transition:  all .3s ease-in-out;
+        transition: all .3s ease-in-out;
 
         &:hover {
           background-color: #fff;

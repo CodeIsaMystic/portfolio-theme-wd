@@ -25,7 +25,6 @@ function smoothScroll(duration) {
 function workBelt() {
 
   $('.thumb__unit').click(function () {
-
     $('.site-work__belt').css('left', '-100%');
     $('.projects-page').show();
   });
@@ -39,7 +38,7 @@ function workBelt() {
 
 function workLoad() {
   $.ajaxSetup({
-    cache: false
+    cache: true
   });
 
   $('.thumb__unit').click(function () {
@@ -50,8 +49,10 @@ function workLoad() {
       spinner = '<div class="loader">Loading...</div>',
       newHTML = '/work/' + newFolder + '.html';
     $('.project-load').html(spinner).load(newHTML);
+    //  $('.project-load').html(spinner).load(url);
     $('.project-title').text(newTitle);
   });
 }
 
 export default Functions;
+

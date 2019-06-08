@@ -23,6 +23,8 @@
     float: right;
     padding-top: 10px;
 
+    @mixin clearfix;
+
     &__links {
       padding-left: 0;
       margin: 0;

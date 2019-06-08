@@ -1,7 +1,9 @@
 .site-work {
   overflow-x: hidden;
+  @mixin clearfix;
 
   &__belt {
+
     width: 200%;
     position: relative;
     left: 0%;
