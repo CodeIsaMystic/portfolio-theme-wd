@@ -392,14 +392,11 @@ body {
     font-size: 12px;
   }
 }.hero {
-  padding-top: 80px;
+  padding-top: 130px;
 }.hero::after{
   content: "";
   clear: both;
   display: table;
-}@media (min-width: 768px){.hero{
-    padding-top: 130px;
-  }
 }.hero__title {
   text-align: center;
   font-size: 55px;
@@ -573,8 +570,9 @@ body {
 }.skills-block__unit .skills-9 span:nth-child(n+10) {
   background-color: #e5eaee;
 }.skills-block--align-x {
-  padding-left: 70px;
-}/* to adjust centering */@media (min-width: 768px){.skills-block--align-x{
+  padding-left: 90px;
+  margin: 0 auto;
+}@media (min-width: 768px){.skills-block--align-x{
     padding-left: 70px;
   }
 }.site-work {

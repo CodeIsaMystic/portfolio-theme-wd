@@ -64,8 +64,9 @@
   }
 
   &--align-x {
-    padding-left: 70px;
-/* to adjust centering */
+    padding-left: 90px;
+    margin: 0 auto;
+
     @mixin atSmall {
       padding-left: 70px;
     }

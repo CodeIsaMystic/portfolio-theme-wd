@@ -1,17 +1,10 @@
 .primary-nav {
   padding-top: 80px;
+  @mixin clearfix;
 
   @mixin atSmall {
     padding-top: 20px;
-  }
-
-  @mixin clearfix;
-
-
-  &--pull-right {
-    @mixin atSmall {
-      float: right;
-    }
+    float: right;
   }
 
   ul {
