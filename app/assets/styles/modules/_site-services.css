@@ -25,12 +25,12 @@
       position: absolute;
       top: 50%;
       right: 50px;
+      z-index: 3;
+      cursor: pointer;
 
-       &>svg {
+      &>svg {
         width: 40px;
         height: 40px;
-       /* cursor: pointer;
-        color: $accent;*/
       }
     }
 
@@ -38,10 +38,30 @@
       position: absolute;
       top: 50%;
       left: 50px;
-      /* color: $accent;
-     cursor: pointer;*/
+      cursor: pointer;
+      z-index: 3;
+    }
+  }
 
+  .services-mobile-nav {
+    text-align: center;
 
+    &>span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid $bgColor;
+      margin: 0 10px;
+      cursor: pointer;
+
+      &.active {
+        border-color: $accent;
+      }
+    }
+
+    @mixin atSmall {
+      display: none;
     }
   }
 
@@ -51,32 +71,38 @@
 
     &__unit {
       max-width: 750px;
-      margin: 0 auto 50px;
       display: block;
-      
+      margin: 0;
+      left: auto;
+      /* position: relative;*/
+
       @mixin atSmall {
         display: flex;
-
+        margin: 0 auto 50px;
       }
 
       .unit__icon {
-        text-align: center;
-        min-width: 150px;
-
-       /* &--title {
-          display: block;
-          font-size: 18px;
-          color: $accentLight;
-          margin-bottom: 0;
-          margin-top: 50px;
-        }*/
-
-        &--diamond {
-          width: 100px;
-          height: 100px;
-          margin-top: 50px;
+        margin: 0 auto ;
+        
+        @mixin atSmall {
+          min-width: 150px;
+          /* padding-right: 50px;*/
         }
+        
+        &--diamond {
+          /* width: 100px;
+          height: 100px;*/
+          width: 100%;
+          margin-top: 50px;
+          text-align: center !important;
+         /* margin-right: 0;*/
 
+          @mixin atSmall {
+            margin-top: 100px;
+           /* margin-right: 50px;*/
+           padding-right: 50px;
+          }
+        }
       }
 
       .unit__content {
@@ -110,11 +136,5 @@
         }
       }
     }
-  }
-
-  &__logos {
-    /*position: relative;
-    width: 100%;
-    display: flex;*/
   }
 }
