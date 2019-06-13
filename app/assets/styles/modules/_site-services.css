@@ -60,7 +60,7 @@
       }
     }
 
-    @mixin atSmall {
+    @mixin atMedium {
       display: none;
     }
   }
@@ -72,11 +72,10 @@
     &__unit {
       max-width: 750px;
       display: block;
-      margin: 0;
-      left: auto;
-      /* position: relative;*/
+      margin: 0 auto;
+     /* left: auto;*/
 
-      @mixin atSmall {
+      @mixin atMedium {
         display: flex;
         margin: 0 auto 50px;
       }
@@ -84,22 +83,18 @@
       .unit__icon {
         margin: 0 auto ;
         
-        @mixin atSmall {
+        @mixin atMedium {
           min-width: 150px;
-          /* padding-right: 50px;*/
+          
         }
         
         &--diamond {
-          /* width: 100px;
-          height: 100px;*/
           width: 100%;
           margin-top: 50px;
           text-align: center !important;
-         /* margin-right: 0;*/
 
-          @mixin atSmall {
+          @mixin atMedium {
             margin-top: 100px;
-           /* margin-right: 50px;*/
            padding-right: 50px;
           }
         }

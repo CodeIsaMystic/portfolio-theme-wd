@@ -48,7 +48,7 @@
     @mixin atSmall {
       position: absolute;
       margin: 0 !important;
-      bottom: 20px;
+      bottom: 10px;
       right: 15px;
     }
 
