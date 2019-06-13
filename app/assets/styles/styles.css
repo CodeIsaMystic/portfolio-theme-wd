@@ -5,14 +5,13 @@
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
-@import "base/_social-links";
 
 
 /****************       Modules       ****************/
 @import "modules/_site-header";
-@import "modules/_primary-nav";
+@import "modules/_navBar";
+@import "modules/_social-icons";
 @import "modules/_hero";
-
 @import "modules/_page-section";
 @import "modules/_site-info";
 @import "modules/_headline";
@@ -25,7 +24,4 @@
 @import "modules/_site-services";
 @import "modules/_site-contact";
 @import "modules/_site-form-contact";
-
-
-
 @import "modules/_site-footer";

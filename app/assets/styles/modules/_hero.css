@@ -1,6 +1,10 @@
 .hero {
-  padding-top: 130px;
+  padding-top: 70px;
   @mixin clearfix;
+
+  @mixin atSmall {
+    padding-top: 135px;
+  }
 
 
   &__title {
@@ -11,6 +15,7 @@
     text-transform: uppercase;
     letter-spacing: 0.02em;
     margin: 0 auto;
+    cursor: pointer;
 
     @mixin atSmall {
       font-size: 72px;
@@ -21,7 +26,7 @@
       display: inline-block;
       padding: 0.2em 0.5em;
       border: 10px solid #fff;
-     
+
     }
   }
 

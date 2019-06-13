@@ -11,6 +11,11 @@
     height: 50px;
     float: left;
     margin-right: 30px;
+    margin-top: 25px;
+
+    @mixin atSmall {
+      margin-top: 0;
+    }
 
     & svg {
       width: 100%;
@@ -19,54 +24,24 @@
     }
   }
 
-  &__text {
+  &__menu {
     float: right;
-    padding-top: 10px;
+    position: relative;
+    margin-top: 15px;
 
     @mixin clearfix;
 
-    &__links {
-      padding-left: 0;
-      margin: 0;
-      list-style: none;
-
-      & li {
-        display: inline-block;
-
-      }
-
-      & a {
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 1;
-        color: rgba(0, 0, 0, .6);
-        text-transform: uppercase;
-        transition: color .3s ease-out;
-        padding-left: 35px;
-
-        @mixin atSmall {
-          font-size: 13px;
-        }
-
-        &:hover {
-          color: #000;
-        }
-      }
-    }
-
     &__copyright {
-      margin: 0;
-      padding-top: 5px;
-      float: right;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: 500;
-      letter-spacing: 1;
-      color: rgba(0, 0, 0, 0.8);
+      margin: 0 auto;
+      padding-right: 0;
+      text-align: center;
+      color: rgba(0, 0, 0, .65);
 
+      @mixin atSmall {
+        margin-top: 7px;
+        padding-right: 40px;
+        text-align: right;
+      }
     }
-
   }
-
-
 }
