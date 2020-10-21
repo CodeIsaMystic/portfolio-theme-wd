@@ -28,8 +28,7 @@
     }
 
     &--2 {
-      background-image: url('../../assets/images/work/proj-2/thumb.jpg')
-    }
+      background-image: url('../../assets/images/work/proj-2/thumb.jpg'); }
 
     &--3 {
       background-image: url('../../assets/images/work/proj-3/thumb.jpg')

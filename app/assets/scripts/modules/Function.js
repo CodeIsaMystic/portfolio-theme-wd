@@ -31,8 +31,7 @@ function workBelt() {
 
   $('.projects-page__return').click(function () {
     $('.site-work__belt').css('left', '0%');
-    $('.projects-page').hide(500);
-
+    $('.projects-page').hide(50);
   });
 }
 
@@ -42,18 +41,6 @@ function workLoad() {
   });
 
   $('.thumb__unit').click(function () {
-
-    /*
-    var $this = $(this),
-      newTitle = $this.find('strong').text(),
-      newFolder = $this.data('folder'),
-      spinner = '<div class="loader">Loading...</div>',
-      newHTML = './work/' + newFolder + '.html';
-    $('.project-load').html(spinner).load(newHTML);
-    //  $('.project-load').html(spinner).load(url);
-    $('.project-title').text(newTitle);
-  });*/
-
   
   var $this = $(this),
     newTitle = $this.find('strong').text(),
