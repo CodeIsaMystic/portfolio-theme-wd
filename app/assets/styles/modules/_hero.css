@@ -34,17 +34,17 @@
     padding-top: 14px;
     text-align: center;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 26px;
     text-transform: uppercase;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
     color: #fff;
-    line-height: 0.8;
+    line-height: 0.9;
 
     @mixin atSmall {
       padding-top: 0;
-      font-size: 25px;
+      font-size: 30px;
       line-height: 1;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.05em;
     }
   }
 }

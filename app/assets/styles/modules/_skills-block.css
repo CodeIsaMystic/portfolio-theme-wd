@@ -50,7 +50,7 @@
       background-color: $bgColor;
     }
 
-    .skills-7 span:nth-child(n+8) {
+    .skills-5 span:nth-child(n+6) {
       background-color: $bgColor;
     }
 
@@ -59,6 +59,10 @@
     }
 
     .skills-9 span:nth-child(n+10) {
+      background-color: $bgColor;
+    }
+
+    .skills-10 span:nth-child(n+11) {
       background-color: $bgColor;
     }
   }

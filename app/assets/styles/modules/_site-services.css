@@ -2,69 +2,6 @@
   position: relative;
 
 
-  .services-slides-controls {
-    display: none;
-
-    @mixin atMedium {
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
-
-    &>div {
-      width: 40px;
-      height: 40px;
-      margin-top: -20px;
-    }
-
-
-    &--next {
-      position: absolute;
-      top: 50%;
-      right: 50px;
-      z-index: 3;
-      cursor: pointer;
-
-      &>svg {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    &--prev {
-      position: absolute;
-      top: 50%;
-      left: 50px;
-      cursor: pointer;
-      z-index: 3;
-    }
-  }
-
-  .services-mobile-nav {
-    text-align: center;
-
-    &>span {
-      display: inline-block;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      border: 2px solid $bgColor;
-      margin: 0 10px;
-      cursor: pointer;
-
-      &.active {
-        border-color: $accent;
-      }
-    }
-
-    @mixin atMedium {
-      display: none;
-    }
-  }
-
   &__belt {
     width: 100%;
     position: relative;
